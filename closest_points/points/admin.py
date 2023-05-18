@@ -1,5 +1,6 @@
 """Points admin interface."""
 from django.contrib import admin
+
 from closest_points.points.models import ClosestPoint
 
 
