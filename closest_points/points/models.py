@@ -67,7 +67,7 @@ class ClosestPoint(models.Model):
 
         return f"{','.join(first_points)};{','.join(second_points)}"
 
-    def save(self) -> None:
+    def save(self, *args, **kwargs) -> None:
         """Override default save method."""
         self.closest_points = self.closest_pair_str
-        return super().save()
+        super().save(*args, **kwargs)

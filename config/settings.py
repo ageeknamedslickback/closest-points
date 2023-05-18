@@ -67,6 +67,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "closest_points.points",
+    # external
+    "rest_framework",
 ]
 
 MIDDLEWARE = [
