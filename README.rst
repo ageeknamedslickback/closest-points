@@ -94,7 +94,7 @@ Payload
     }
 
 Response (Status: `201`)
-*******
+************************
 
 .. code-block:: json
 
@@ -102,6 +102,17 @@ Response (Status: `201`)
         "points_set": "2,2;-1,30;20,11;4,5",
         "closest_points": "2,2;4,5"
     }
+
+Example
+*******
+
+.. code-block:: curl
+
+    curl --location 'http://127.0.0.1:8000/api/v1/closest-points/' \
+    --header 'Content-Type: application/json' \
+    --data '{
+        "points_set": "2,3;4,5;6,7"
+    }'
 
 List
 ----
@@ -117,7 +128,7 @@ List
       - Gets all the stored point sets and their closes points
 
 Response (Status: `200`)
-*******
+************************
 
 .. code-block:: json
 
@@ -127,6 +138,14 @@ Response (Status: `200`)
             "closest_points": "2,2;4,5"
         }
     ]
+
+Example
+*******
+
+.. code-block:: curl
+
+    curl --location 'http://127.0.0.1:8000/api/v1/closest-points/' \
+    --header 'Content-Type: application/json'
 
 Admin
 =====
