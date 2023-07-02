@@ -71,6 +71,7 @@ INSTALLED_APPS = [
     "rest_framework",
 ]
 
+SILKY_MIDDLEWARE = "silk.middleware.SilkyMiddleware"
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
